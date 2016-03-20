@@ -1,0 +1,301 @@
+body {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.gui {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #48f;
+	white-space: nowrap;
+}
+
+.desktop {
+	overflow: hidden;
+}
+
+.desktop-container {
+	height: 100%;
+}
+
+.tool-bar {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	background-color: #bbb;
+	height: 58px;
+	z-index: 999999;
+	border: 2px solid #888;
+	border-top: 2px solid #eee;
+	border-right: 2px solid #eee;
+	box-sizing: border-box;
+}
+
+.icon {
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin: 4px 0 4px 4px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.small {
+	width: 24px;
+	height: 24px;
+}
+
+.button {
+	box-sizing: border-box;
+	border: 2px solid transparent;
+}
+
+.task {
+	display: inline-block;
+	height: 48px;
+	border: 2px solid #888;
+	border-top: 2px solid #eee;
+	border-right: 2px solid #eee;
+	padding: 5px 10px;
+	cursor: default;
+	margin: 0 4px 0 0;
+	width: 100px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.button:hover {
+	border: 2px solid #888;
+	border-top: 2px solid #eee;
+	border-right: 2px solid #eee;
+}
+
+.button:active {
+	border: 2px solid #eee;
+	border-top: 2px solid #888;
+	border-right: 2px solid #888;
+}
+
+.task.active {
+	border: 2px solid #eee;
+	border-top: 2px solid #888;
+	border-right: 2px solid #888;
+}
+
+.quick-launch {
+	padding: 0 5px;
+	border-left: 2px solid #888;
+	border-right: 2px solid #eee;
+}
+
+.start-menu {
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	bottom: 53px;
+	left: -2px;
+	border: 2px solid #888;
+	border-top: 2px solid #eee;
+	border-right: 2px solid #eee;
+	background-color: #bbb;
+}
+
+.start-menu .button {
+	padding: 10px 10px 10px 50px;
+	width: auto;
+}
+
+.start-menu-button {
+	padding: 0 5px;
+}
+
+.task-bar-container {
+	padding: 0 5px;
+	width: 100%;
+	white-space: normal;
+}
+
+.task-bar {
+	display: inline-block;
+	height: 48px;
+	box-sizing: border-box;
+	margin: 0;
+	overflow-y: auto;
+	width:100%;
+}
+
+#clock {
+	padding: 5px 10px;
+}
+
+.start {
+	background-image: url('../img/icons/start.ico');
+}
+
+.browser {
+	background-image: url('../img/icons/browser.ico');
+}
+
+.notepad {
+	background-image: url('../img/icons/notepad.ico');
+}
+
+.explorer {
+	background-image: url('../img/icons/explorer.ico');
+}
+
+.minimize {
+	background-image: url('../img/icons/minimize-window.ico');
+}
+
+.maximize {
+	background-image: url('../img/icons/maximize-window.ico');
+}
+
+.close {
+	background-image: url('../img/icons/close-window.ico');
+}
+
+.system-tray {
+	display: inline-block;
+	height: 48px;
+	box-sizing: border-box;
+	padding: 0 4px;
+	margin: 0 4px;
+	border: 2px solid #eee;
+	border-top: 2px solid #888;
+	border-right: 2px solid #888;
+}
+
+.window {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 50%;
+	height: 50%;
+	border: 2px solid #888;
+	border-top: 2px solid #eee;
+	border-right: 2px solid #eee;
+	background-color: #bbb;
+	padding: 2px;
+	z-index: 1;
+}
+
+.window tbody {
+	vertical-align: top;
+}
+
+.window-header {
+	background-color: #888;
+	color: black;
+	height: 32px;
+}
+
+.window.active {
+	z-index: 9999;
+}
+
+.window.active .window-header {
+	background-color: #00e;
+	color: white;
+}
+
+.window-status-bar {
+    height: 32px;
+    border: 2px solid #eee;
+    border-top: 2px solid #888;
+    border-right: 2px solid #888;
+    box-sizing: border-box;
+}
+
+.window-size-buttons {
+	text-align: right;
+	padding-right: 4px;
+	vertical-align: top;
+}
+
+.window-close-button {
+	padding-right: 4px;
+	width: 32px;
+	vertical-align: top;
+}
+
+.window-icon {
+	width: 40px;
+}
+
+.window-title {
+}
+
+.window-resize {
+	position: relative;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+	background-image: url('../img/icons/resize.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+.window-content {
+	width: 100%;
+	height: 100%;
+}
+
+.template {
+	display: none;
+}
+
+.desktop .window:nth-of-type(1n+0) {
+	left: 10%;
+	top: 10%;
+}
+
+.desktop .window:nth-of-type(2n+0) {
+	left: 12%;
+	top: 12%;
+}
+
+.desktop .window:nth-of-type(3n+0) {
+	left: 14%;
+	top: 14%;
+}
+
+.desktop .window:nth-of-type(4n+0) {
+	left: 16%;
+	top: 16%;
+}
+
+.desktop .window:nth-of-type(5n+0) {
+	left: 18%;
+	top: 18%;
+}
+
+.desktop .window:nth-of-type(6n+0) {
+	left: 20%;
+	top: 20%;
+}
+
+button.browser-go {
+	width: 100%;
+	height: 100%;
+}
+
+input.browser-address-bar {
+	width: 100%;
+	height: 100%;
+}
+
+.browser-address-bar {
+	height: 32px;
+}
+
+iframe.browser-iframe {
+	width: 100%;
+	height: 100%;
+}

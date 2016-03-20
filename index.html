@@ -1,0 +1,141 @@
+<html>
+	<head>
+		<title>Fun With Valilla JS</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css?">
+	</head>
+	<body>
+		<table cellspacing="0" cellpadding="0" border="0" class="gui">
+			<tbody>
+				<tr class="desktop-container">
+					<td colspan="4">
+						<div class="desktop"></div>
+					</td>
+				</tr>
+				<tr class="tool-bar">
+					<td class="start-menu-button">
+						<div class="start-menu">
+							<div class="browser icon button">Browser</div><br>
+							<div class="notepad icon button">Notepad</div><br>
+							<div class="explorer icon button">Explorer</div><br>
+						</div>
+						<div class="start icon button"></div>
+					</td>
+					<td class="quick-launch">
+						<div class="browser icon button"></div>
+						<div class="notepad icon button"></div>
+						<div class="explorer icon button"></div>
+					</td>
+					<td class="task-bar-container">
+						<div class="task-bar"></div>						
+					</td>
+					<td>
+						<div class="system-tray">
+							<span id="clock"></span>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table id="browser-template" cellspacing="0" cellpadding="0" border="0" class="window template" data-drag-target>
+			<thead class="window-header" data-draggable>
+				<tr>
+					<td class="window-icon">
+						<div class="browser icon small"></div>
+					</td>
+					<td class="window-title">
+						Browser
+					</td>
+					<td class="window-size-buttons">
+						<div class="minimize icon small button"></div>
+						<div class="maximize icon small button"></div>
+					</td>
+					<td class="window-close-button">
+						<div class="close icon small button"></div>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="4">
+						<table class="window-content" cellpadding="1" cellspacing="1">
+							<tr class="browser-address-bar">
+								<td>
+									<input class="browser-address-bar">
+								</td>
+								<td>
+									<button class="browser-go button">GO</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<iframe class="browser-iframe" src="about:blank"></iframe>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3" class="window-status-bar">
+					</td>
+					<td class="window-resize">
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+
+
+		<table id="notepad-template" cellspacing="0" cellpadding="0" border="0" class="window template" data-drag-target>
+			<thead class="window-header" data-draggable>
+				<tr>
+					<td class="window-icon">
+						<div class="notepad icon small"></div>
+					</td>
+					<td class="window-title">
+						Notepad
+					</td>
+					<td class="window-size-buttons">
+						<div class="minimize icon small button"></div>
+						<div class="maximize icon small button"></div>
+					</td>
+					<td class="window-close-button">
+						<div class="close icon small button"></div>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="4">
+						<table class="window-content" cellpadding="1" cellspacing="1">
+							<tr class="browser-address-bar">
+								<td>
+									<div class="button">File</div>
+								</td>
+								<td>
+									<div class="button">Help</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<textarea style="width:100%;height:100%;"></textarea>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3" class="window-status-bar">
+					</td>
+					<td class="window-resize">
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+
+	</body>
+	<script type="text/javascript" src="js/app.js?"></script>
+</html>
